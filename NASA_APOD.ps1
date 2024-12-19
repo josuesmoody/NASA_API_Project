@@ -1,5 +1,5 @@
 # Initial Settings
-$APIKey = "dAgH9yfzk655h3P60zdAdYHILAMcFVeY9BwY0F1g" 
+$APIKey = "YOUR_API_KEY" # Get yours on https://api.nasa.gov/
 $BaseURL = "https://api.nasa.gov/planetary/apod"
 
 $CompleteURL = "$BaseURL`?api_key=$APIKey"
