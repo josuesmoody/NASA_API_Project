@@ -1,77 +1,103 @@
-NASA APOD API PowerShell Project
 
-Overview
-This project demonstrates how to use PowerShell to interact with the NASA Astronomy Picture of the Day (APOD) API. The script retrieves metadata about the image of the day, downloads the image, and opens it in the system's default image viewer.
+# NASA APOD API PowerShell Project 🚀
 
-Features
-Connects to the NASA APOD API using an API key.
-Fetches and displays the following metadata:
-Title of the image.
-Date it was featured.
-Description of the image.
-URL of the image.
-Downloads the image and saves it locally with a sanitized filename.
-Opens the image using the system's default image viewer.
-Requirements
-1. Tools and Environment
-PowerShell 5.1 or later (Windows or cross-platform via PowerShell Core).
-Active internet connection.
-2. API Key
-Obtain a free API key by signing up at NASA API Portal.
-Usage
-Step 1: Clone the Repository
-bash
-Copiar código
+## Overview
+This project showcases how to use PowerShell to interact with the NASA Astronomy Picture of the Day (APOD) API. 
+With just a few commands, the script retrieves metadata about NASA's image of the day, downloads it, and opens it 
+in your system's default image viewer. 
+
+### Highlights
+- Fetches stunning daily images from NASA's APOD API.
+- Displays essential metadata: 
+  - Title
+  - Date featured
+  - Description
+  - URL of the image
+- Downloads the image with a sanitized filename to ensure safe storage.
+- Opens the image directly using your system's default image viewer.
+
+## Prerequisites
+
+### Tools & Environment
+- **PowerShell 5.1** or later (compatible with Windows, macOS, or Linux via PowerShell Core).
+- An active internet connection.
+
+### API Key
+- Sign up for a free API key at the [NASA API Portal](https://api.nasa.gov/).
+
+## Setup Instructions
+
+### 1. Clone the Repository
+```bash
 git clone https://github.com/your-username/nasa-apod-powershell.git
 cd nasa-apod-powershell
-Step 2: Add Your API Key
-Edit the NASA_APOD.ps1 file and replace the placeholder in the $APIKey variable with your API key:
+```
 
-powershell
-Copiar código
+### 2. Add Your API Key
+Edit the `NASA_APOD.ps1` script file. Replace the placeholder in the `$APIKey` variable with your API key:
+```powershell
 $APIKey = "YOUR_API_KEY"
-Step 3: Run the Script
-Execute the script in PowerShell:
+```
 
-powershell
-Copiar código
+### 3. Run the Script
+Run the script in PowerShell:
+```powershell
 .\NASA_APOD.ps1
-Expected Output
-The script will display the metadata for the APOD image in the console:
+```
 
-mathematica
-Copiar código
+## Expected Output
+
+The script will display the following metadata in your PowerShell console:
+```
 Astronomy Picture of the Day:
 Title: [Image Title]
 Date: [Date]
 Description: [Image Description]
 Image URL: [URL]
-The image will be downloaded and saved in the current directory.
+```
+- The image will be downloaded and saved in the current directory.
+- It will automatically open using your system's default image viewer.
 
-The script will open the image using the default image viewer.
+## File Structure
 
-File Structure
-bash
-Copiar código
+```
 nasa-apod-powershell/
-├── NASA_APOD.ps1   # Main PowerShell script
-├── README.md       # Project documentation
-PowerShell Commands Used
-Invoke-RestMethod: Fetches data from the API in JSON format.
-Invoke-WebRequest: Downloads the image from the provided URL.
-Write-Output: Displays information in the console.
-Start-Process: Opens the downloaded image using the default viewer.
-Error Handling
-If the API request fails (e.g., invalid API key, no internet), the script terminates gracefully with an error message.
-If the image URL is unavailable, the script displays an error but continues running.
-License
-This project is licensed under the MIT License.
+├── NASA_APOD.ps1    # Main PowerShell script
+├── README.md        # Project documentation
+```
 
-Contributing
-Contributions are welcome! If you have suggestions or improvements, please create a pull request or open an issue.
+## Key PowerShell Commands Used
 
-Acknowledgments
-NASA for the amazing APOD API.
-PowerShell for providing a versatile scripting environment.
-Contact
-Created by YJosué Elías Santana. For inquiries, feel free to open an issue or contact me directly.
+- `Invoke-RestMethod`: Fetches data from the API in JSON format.
+- `Invoke-WebRequest`: Downloads the image from the provided URL.
+- `Write-Output`: Displays metadata in the console.
+- `Start-Process`: Opens the downloaded image.
+
+## Error Handling
+
+- **API Failures**: Gracefully handles invalid API keys or connection issues.
+- **Missing Image URL**: Displays an error if the image URL is unavailable but continues execution.
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for more details.
+
+## Contributing
+
+Contributions are welcome! 🎉 If you have ideas, suggestions, or improvements, please:
+1. Fork the repository.
+2. Create a feature branch.
+3. Submit a pull request.
+
+## Acknowledgments
+
+- **NASA** for the breathtaking APOD API. 🌌
+- **PowerShell** for its robust scripting capabilities.
+
+## Contact
+
+Created by **Josué Elías Santana**. 
+Feel free to [contact me](https://www.linkedin.com/in/josue-santana/) for any inquiries.
+
+---
+✨ Enjoy exploring the universe, one image at a time! ✨
