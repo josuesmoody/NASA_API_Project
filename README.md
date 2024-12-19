@@ -29,8 +29,8 @@ in your system's default image viewer.
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/nasa-apod-powershell.git
-cd nasa-apod-powershell
+git clone https://github.com/josuesmoody/NASA_API_Project.git
+cd NASA_API_Project
 ```
 
 ### 2. Add Your API Key
